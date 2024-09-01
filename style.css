@@ -10298,13 +10298,21 @@ i.fa-solid.fa-eye:hover {
 	transition: 0.3s;
 }
 
-.about-us-fa {
+.about-us-svg {
 	background-color: #ffeeed;
 	padding: 25px;
 	border-radius: 35px;
 	margin-bottom: 10px;
 	width: 100px;
+}
 
+.about-us-fa {
+	background-color: #fa584d;
+	padding: 25px;
+	border-radius: 35px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: white;
 }
 
 .about-us-details-h4, .about-us-details-h3 {
