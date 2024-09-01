@@ -10299,12 +10299,12 @@ i.fa-solid.fa-eye:hover {
 }
 
 .about-us-fa {
-	background-color: #fa584d;
+	background-color: #ffeeed;
 	padding: 25px;
 	border-radius: 35px;
 	margin-bottom: 10px;
-	font-size: 20px;
-	color: white;
+	width: 100px;
+
 }
 
 .about-us-details-h4, .about-us-details-h3 {
