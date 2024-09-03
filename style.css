@@ -10305,7 +10305,15 @@ i.fa-solid.fa-eye:hover {
 	border-radius: 35px;
 	margin-bottom: 10px;
 	width: 100px;
+}
 
+.about-us-fa {
+	background-color: #fa584d;
+	padding: 25px;
+	border-radius: 35px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: white;
 }
 
 .about-us-fa {
