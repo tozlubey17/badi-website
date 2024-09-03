@@ -204,6 +204,7 @@
 		left: 15px;
 		right: 15px;
 		width: auto;
+		border-radius: 15px 0px 0px 15px;
 	}
 
 	.fluid-section-four .image-column{

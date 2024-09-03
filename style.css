@@ -4552,6 +4552,7 @@ hr {
 	background-size: cover;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	filter: grayscale(1);
 }
 
 .service-block .inner-box:hover .hover_layer {
@@ -10298,13 +10299,22 @@ i.fa-solid.fa-eye:hover {
 	transition: 0.3s;
 }
 
-.about-us-fa {
+.about-us-svg {
 	background-color: #ffeeed;
 	padding: 25px;
 	border-radius: 35px;
 	margin-bottom: 10px;
 	width: 100px;
 
+}
+
+.about-us-fa {
+    background-color: #fa584d;
+    padding: 25px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 .about-us-details-h4, .about-us-details-h3 {
@@ -10386,6 +10396,8 @@ i.fa-solid.fa-eye:hover {
 	border-radius: 20px;
 	background-color: #f4f4f4;
 	box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.1);
+	min-height: 120px; 
+
 }
 .card-header{
 	border-bottom: 0px;
