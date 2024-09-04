@@ -3272,3 +3272,54 @@
 	}
 
 })(window.Zepto || window.jQuery, window, document);
+
+function animateCounter(element, target) {
+	let current = 0;
+	const increment = target / 200;
+
+	const updateCounter = () => {
+		current += increment;
+
+		if (current < target) {
+
+			element.innerText = formatNumber(current);
+			setTimeout(updateCounter, 10);
+		} else {
+			element.innerText = formatNumber(target);
+		}
+	};
+
+	updateCounter();
+}
+
+function formatNumber(num) {
+	if (num >= 1000000) {
+		return (num / 1000000).toFixed(1) + "M";
+	} else if (num >= 1000) {
+		return (num / 1000).toFixed(0) + "K";
+	}
+	return Math.round(num);
+}
+
+
+document.querySelectorAll('.numbers-header-counter').forEach(element => {
+	const target = +element.getAttribute('data-target');
+	animateCounter(element, target);
+});
+
+// aaaaaaaaaaaaaaaaaaaa
+
+$(document).ready(function () {
+	$('.numbers-header').each(function () {
+		$(this).prop('Counter', 0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 3000,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+});
+
