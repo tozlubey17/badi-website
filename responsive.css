@@ -31,11 +31,6 @@
 
 }
 
-@media only screen and (min-width: 1284px){
-	#whatsapp-button{
-		display: none;
-	}
-}
 @media only screen and (max-width: 1284px) {
 
 	.main-header .logo img,

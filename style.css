@@ -10394,10 +10394,6 @@ i.fa-solid.fa-eye:hover {
 	text-align: center;
 }
 
-.accordion-header {
-	margin-left: 15px;
-}
-
 .line {
 	border-top: 4px solid #fa584d;
 	border-radius: 10px;
@@ -10413,37 +10409,6 @@ i.fa-solid.fa-eye:hover {
 
 .btn-link:hover {
 	color: firebrick;
-}
-
-.card {
-	margin-bottom: 15px;
-	border-radius: 20px;
-	background-color: #f4f4f4;
-	box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.1);
-	min-height: 120px;
-
-}
-
-.card-header {
-	border-bottom: 0px;
-	background-color: #f4f4f4;
-}
-
-.card-body {
-	padding-top: 0px;
-}
-
-.accordion>.card>.card-header {
-	margin-bottom: 0px;
-}
-
-.accordion>.card:not(:last-of-type) {
-	border-bottom: 1px solid rgba(0, 0, 0, .125);
-	border-radius: 20px;
-}
-
-.accordion>.card:not(:first-of-type) {
-	border-radius: 20px;
 }
 
 .paydaslar-section {
@@ -10521,42 +10486,43 @@ i.fa-solid.fa-eye:hover {
 
 #whatsapp-button {
 	background-color: #25D366;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 10;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 25px;
-    text-align: center;
+	color: white;
+	padding: 10px;
+	border-radius: 30px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 25px;
+	text-align: center;
 }
 
 .chat-box {
-    width: 300px;
-    border: 1px solid #555555;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 25px;
-    left: 20px;
-    background-color: white;
-    z-index: 10;
-    overflow: hidden;
-    transform: translateX(0%);
-    opacity: 1;
-    transition: transform 300ms ease, opacity 300ms ease;
+	width: 300px;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	bottom: 25px;
+	left: 20px;
+	background-color: white;
+	z-index: 10;
+	overflow: hidden;
+	transform: translateX(0%);
+	opacity: 1;
+	transition: transform 300ms ease, opacity 300ms ease;
 }
 
 .wp-hidden {
-    opacity: 0;
-    transform: translateX(-150%);
-    pointer-events: none;
+	opacity: 0;
+	transform: translateX(-150%);
+	pointer-events: none;
 }
+
 .wp-header {
 	background-color: #25D366;
 	color: white;
@@ -10614,4 +10580,44 @@ i.fa-solid.fa-eye:hover {
 
 .wp-hello-text {
 	font-size: 14px;
+}
+
+.panel-heading {
+
+	h4,
+	i {
+		display: inline-block;
+		padding: 10px;
+		margin: 0px;
+		color: white;
+	}
+
+	i {
+		margin: 15px;
+		-webkit-transition: 0.25s ease-in-out;
+		-moz-transition: 0.25s ease-in-out;
+		transition: 0.25s ease-in-out;
+	}
+
+	&.collapsed i {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+}
+
+.panel {
+	background-color: #fa584d;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.panel-body p {
+	margin-left: 10px;
+}
+li.accordion-item{
+	padding: 5px;
+	color: white;
 }
